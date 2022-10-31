@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- the MAIN.CSS file is linked here -->
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>Number Guesser</h1>
+      <p>Guess a number from 1 to 100</p>
+      <h2 id="hint">Hints will pop up Here!</h2>
+      <div id="counter">
+        <span>Attempts left:</span>
+        <div id="attempt-count">5</div>
+      </div>
+      <div id="guesses">
+        <ul id="guess-list">
+          <li class="guess">
+            <a class="show-option" href="#" title="guess here">
+              <i class="guess">-</i>
+            </a>
+          </li>
+          <li class="guess">
+            <a class="show-option" href="#" title="guess here">
+              <i class="guess">-</i>
+            </a>
+          </li>
+          <li class="guess">
+            <a class="show-option" href="#" title="guess here">
+              <i class="guess">-</i>
+            </a>
+          </li>
+          <li class="guess">
+            <a class="show-option" href="#" title="guess here">
+              <i class="guess">-</i>
+            </a>
+          </li>
+          <li class="guess">
+            <a class="show-option" href="#" title="guess here">
+              <i class="guess">-</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form id="form">
+        <input type="number" id="input" min="1" max="100" placeholder="Enter a number here">
+        <button id="submit-button">Submit</button>
+      </form>
+      <p id="feedback-message" class="hidden">Message is here</p>
+      <button id="replay-button" class="hidden">Play again</button>
+    </div>
+
+    <script src="guessing-game.js"></script>
+    <!-- <script src='js/guessing-game.js'></script> -->
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+  </body>
+
+</html>

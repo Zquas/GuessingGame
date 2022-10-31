@@ -1,0 +1,128 @@
+/* Write your CSS code in this file */
+* {
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    color: mediumslateblue;
+    background: rgb(130, 132, 243);
+    background: linear-gradient(
+        90deg,
+        rgb(40, 43, 228) 0%,
+        rgb(5, 18, 88) 100%
+    );
+}
+
+.hidden {
+    display: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#main.h1 {
+    font-size: 350%;
+    margin-bottom: 3vh;
+}
+
+li{
+    display: inline;
+    font-size: 20px;
+    border: 2px, solid, white;
+    border-radius: 10%;
+}
+
+.guess{
+    border: 2px, solid, white;
+    border-radius: 10%;
+    margin: 0, 10px;
+}
+
+#main.h2 {
+    font-size: 200%;
+    margin-bottom: 3vh;
+}
+
+#counter {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-bottom: 4vh; */
+}
+
+#counter.span {
+    align-self: center;
+    margin-right: 1vw;
+}
+
+#counter.div {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #13073D;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+form.input {
+    background-color: mediumslateblue;
+    padding: 10px;
+    margin-right: 1vw;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 11%;
+}
+
+#submit-button{
+    background-color: #13073D;
+    color: mediumslateblue;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#replay-button{
+    background-color: #13073D;
+    color: mediumslateblue;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-button:hover{
+    background-color: #eae7f7;
+}
+
+#replay-button:hover{
+    background-color: #eae7f7;
+}
+
+#submit-button:disabled{
+    background-color: #a8a8a8;
+    color: #585358;
+}
+
+#input:disabled {
+    background-color: #a8a8a8;
+    color: #585358;
+}
